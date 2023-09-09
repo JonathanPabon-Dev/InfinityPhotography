@@ -1,0 +1,10 @@
+$colors: (
+  'light': #e0e0e0,
+  'light-altern': #ccc,
+  'dark': #303841,
+  'dark-altern': #3a4750,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

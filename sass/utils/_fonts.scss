@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter:wght@400;500;700&display=swap');
+
+$fonts: (
+  'principal-ff': 'Inter',
+  'secondary-ff': 'IM Fell Great Primer SC',
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

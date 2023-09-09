@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: getFont('page'), sans-serif;
+  color: getColor('white');
+  background-color: getColor('bg-color1');
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1440px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  &:visited {
+    color: currentColor;
+  }
+}
+
+.btn {
+  border-style: none;
+  background: none;
+  cursor: pointer;
+}
