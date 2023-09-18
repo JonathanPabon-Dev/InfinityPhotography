@@ -2,7 +2,10 @@ $colors: (
   'light': #e0e0e0,
   'light-altern': #ccc,
   'dark': #303841,
+  'dark-o50': #30384180,
   'dark-altern': #3a4750,
+  'altern': #d9d9d9,
+  'black-o75': #000000bf,
 );
 
 @function getColor($key) {

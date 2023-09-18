@@ -1,0 +1,96 @@
+.header {
+  color: getColor('light');
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  &__container {
+    @include createFlex(space-between);
+    padding: 20px 0;
+  }
+  .navbar {
+    @include createFlex;
+    &__list {
+      @include createFlex;
+      column-gap: 70px;
+      &--contact {
+        display: flex;
+        column-gap: 50px;
+        @include query(md, max) {
+          width: 100%;
+          justify-content: flex-end;
+          margin-right: 50px;
+        }
+      }
+      @include query(lg, max) {
+        column-gap: 40px;
+      }
+      @include query(md, max) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 10px;
+      }
+    }
+    &__btn {
+      &--open {
+        display: none;
+        color: inherit;
+        transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus,
+        &:focus-within {
+          color: getColor('altern');
+        }
+        @include query(md, max) {
+          display: block;
+        }
+      }
+      &--close {
+        visibility: hidden;
+        opacity: 0;
+        color: inherit;
+        transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus,
+        &:focus-within {
+          color: getColor('altern');
+        }
+        &.visible {
+          @include query(md, max) {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        @include query(md, max) {
+          display: flex;
+          width: 100%;
+          justify-content: flex-end;
+          padding: 20px;
+        }
+      }
+    }
+    @include query(md, max) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      justify-content: flex-start;
+      flex-direction: column;
+      background-color: getColor('dark');
+      visibility: hidden;
+      opacity: 0;
+      transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &.visible {
+      @include query(md, max) {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

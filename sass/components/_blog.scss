@@ -1,0 +1,6 @@
+.blog {
+  &__container {
+    @include createFlex;
+    flex-direction: column;
+  }
+}

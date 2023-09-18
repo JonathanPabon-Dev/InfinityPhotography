@@ -9,11 +9,251 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Infinity Photography</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <header class="header">
+      <div class="header__container container">
+        <a href="./index.html" class="logo"
+          ><img src="./images/logo.png" alt="Infinity logo" width="60" height="40"
+        /></a>
+        <nav id="navbar" class="navbar container">
+          <button id="navbar-close" class="navbar__btn--close btn" type="button">
+            <span class="fa-solid fa-xmark"></span>
+          </button>
+          <ul class="navbar__list list">
+            <li class="navbar__item"><a href="./index.html" class="navbar__link link">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link link">Page</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link link">Blog</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link link">Our Work</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link link">About Us</a></li>
+          </ul>
+        </nav>
+        <ul class="navbar__list--contact list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link link"
+              ><span class="fa-solid fa-magnifying-glass"></span
+            ></a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link link"><span class="fa-solid fa-phone"></span></a>
+          </li>
+        </ul>
+        <button id="navbar-open" class="navbar__btn--open btn" type="button">
+          <span class="fa-solid fa-bars"></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="page__name">Infinity Photography</h1>
+          <p class="hero__text">The photo gallery</p>
+          <button class="section__btn btn" type="button">Book Your Order</button>
+        </div>
+      </section>
+      <section class="material section">
+        <div class="material__container container">
+          <h2 class="section__title">“ A photograph is usually looked at - seldom looked into ”</h2>
+          <p class="section__text">
+            Only photography has been able to divide human life into a series of moments, each of
+            them has the value of a complete existence.
+          </p>
+          <ul class="gallery__list list">
+            <li class="gallery__item">
+              <img class="image" src="./images/1.jpg" alt="" />
+              <p class="image__description">Best Background</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/2.jpg" alt="" />
+              <p class="image__description">Best Camera's</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/3.jpg" alt="" />
+              <p class="image__description">Best Editer's</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work section">
+        <div class="work__container container">
+          <h2 class="section__title">“ Our Work ”</h2>
+          <p class="section__text">"Photographs are just light and time."</p>
+          <ul class="gallery__list list">
+            <li class="gallery__item">
+              <img class="image" src="./images/4.jpg" alt="" />
+              <p class="image__description">couple photography</p>
+            </li>
+            <li class="gallery__item wide">
+              <img class="image" src="./images/5.jpg" alt="" />
+              <p class="image__description">pre wedding photography</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/6.jpg" alt="" />
+              <p class="image__description">Model Photography</p>
+            </li>
+            <li class="gallery__item wide">
+              <img class="image" src="./images/7.jpg" alt="" />
+              <p class="image__description">product photography</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/8.jpg" alt="" />
+              <p class="image__description">diamond photography</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/9.jpg" alt="" />
+              <p class="image__description">natural photography</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/10.jpg" alt="" />
+              <p class="image__description">wedding photography</p>
+            </li>
+            <li class="gallery__item wide">
+              <img class="image" src="./images/11.jpg" alt="" />
+              <p class="image__description">engagement photography</p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/12.jpg" alt="" />
+              <p class="image__description">professional photography</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="blog section">
+        <div class="blog__container container">
+          <h2 class="section__title">“ read our latest blog ”</h2>
+          <p class="section__text">
+            Only photography has been able to divide human life into a series of moments, each of
+            them has the value of a complete existence.
+          </p>
+          <ul class="gallery__list list">
+            <li class="gallery__item">
+              <img class="image" src="./images/13.jpg" alt="" />
+              <h3 class="post__category">Engagement photography</h3>
+              <p class="post__description">
+                “It's like my life isn't even real to me unless you're there and you're in it and
+                I'm sharing it with you.”
+              </p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/14.jpg" alt="" />
+              <h3 class="post__category">clothing brand photography</h3>
+              <p class="post__description">
+                “The best fashion show is definitely on the street. Always has been, and always will
+                be.”
+              </p>
+            </li>
+            <li class="gallery__item">
+              <img class="image" src="./images/15.jpg" alt="" />
+              <h3 class="post__category">family moments</h3>
+              <p class="post__description">
+                “The best thing about a picture is that it never changes, even when the people in it
+                do.”
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact section">
+        <div class="contact__container container">
+          <h2 class="section__title">We love meeting new people</h2>
+          <p class="section__text">If you want to work with us send a message.</p>
+          <button class="section__btn btn" type="button">Contact Us</button>
+        </div>
+        <div class="random__images">
+          <img class="image" src="./images/16.jpg" alt="" />
+          <img class="image" src="./images/17.jpg" alt="" />
+          <img class="image" src="./images/18.jpg" alt="" />
+          <img class="image" src="./images/19.jpg" alt="" />
+          <img class="image" src="./images/20.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo">
+          <h2 class="page__name">Infinity Photography</h2>
+          <a href="./index.html" class="logo"
+            ><img src="./images/logo.png" alt="Infinity logo" width="60" height="40"
+          /></a>
+          <ul class="foot__list list">
+            <li class="list__item">
+              Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016
+            </li>
+            <li class="list__item">
+              <a href="tel:+918001112222" class="list__link link">+91 800 111 2222</a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:infinityphotography01@gmail.com" class="list__link link"
+                >infinityphotography01@gmail.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social__list list">
+            <li class="social__item">
+              <a href="#" class="social__link link">
+                <span class="fa-brands fa-facebook"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link link">
+                <span class="fa-brands fa-instagram"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link link">
+                <span class="fa-brands fa-twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h2 class="foot__title">Quick Links</h2>
+          <ul class="foot__list list">
+            <li class="list__item">
+              <a href="./index.html" class="list__link link">Home</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Page</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Blog</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Work</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h2 class="foot__title">Service</h2>
+          <ul class="foot__list list">
+            <li class="list__item">
+              <a href="#" class="list__link link">Wedding Photography</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Professional Photographer</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Personal Photographer</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link link">Pre Wedding Photoshoot</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

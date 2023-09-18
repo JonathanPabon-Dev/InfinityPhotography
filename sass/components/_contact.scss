@@ -1,0 +1,16 @@
+.contact {
+  &__container {
+    @include createFlex;
+    flex-direction: column;
+  }
+  .random__images {
+    margin: 77px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    & .image {
+      width: 20vw;
+      height: 20vw;
+      object-fit: cover;
+    }
+  }
+}

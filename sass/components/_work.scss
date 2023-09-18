@@ -1,0 +1,6 @@
+.work {
+  &__container {
+    @include createFlex;
+    flex-direction: column;
+  }
+}

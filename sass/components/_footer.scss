@@ -1,0 +1,89 @@
+.footer {
+  padding: 45px 0;
+  color: getColor('dark');
+  background-color: getColor('altern');
+  &__container {
+    @include createFlex($align: flex-start, $justify: space-between);
+    @include query(md, max) {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    .logo {
+      position: absolute;
+      top: 5px;
+      left: 170px;
+      @include query(md, max) {
+        position: relative;
+        top: 0;
+        left: auto;
+      }
+    }
+    .page__name {
+      width: 250px;
+      font-family: getFont('secondary-ff');
+      font-size: 40px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+    @include query(md, max) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__links {
+    @include createFlex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+  }
+  .foot {
+    &__title {
+      width: fit-content;
+      padding-bottom: 10px;
+      border-bottom: 1px solid getColor('dark');
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    &__list {
+      @include createFlex($align: flex-start);
+      flex-direction: column;
+      margin-top: 35px;
+      font-size: 18px;
+      font-weight: 400;
+      gap: 20px;
+      @include query(md, max) {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  .social {
+    &__list {
+      margin-top: 20px;
+      @include createFlex($justify: flex-start);
+      gap: 30px;
+      @include query(md, max) {
+        align-items: center;
+      }
+    }
+    &__item {
+      color: getColor('dark-altern');
+      font-size: 30px;
+      &:hover,
+      &:focus,
+      &:focus-within,
+      &:focus-visible {
+        scale: 1.1;
+        color: getColor('dark');
+      }
+    }
+  }
+}
